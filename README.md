@@ -241,4 +241,6 @@ addresses.
 
 ## License
 
+MIT. See [LICENSE](LICENSE).
+
 Copyright (c) 2026 quatric

@@ -3,7 +3,7 @@ meta:
   title: Animal Crossing - Wild World, WFC letter download (forest_mail_*.bin)
   file-extension: bin
   endian: le
-  license: CC0-1.0
+  license: MIT
 
 doc: |
   The letter that Animal Crossing: Wild World (NDS, ADME) downloaded from

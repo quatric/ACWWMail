@@ -3,7 +3,7 @@ meta:
   title: Animal Crossing - Wild World, WFC bulletin-board download (forest_bbs_*.bin)
   file-extension: bin
   endian: le
-  license: CC0-1.0
+  license: MIT
 
 doc: |
   The town bulletin-board message that Animal Crossing: Wild World (NDS, ADME)
