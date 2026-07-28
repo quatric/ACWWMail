@@ -366,6 +366,8 @@ def cmd_mail(args) -> int:
         base.greeting = args.greeting
     if args.closing is not None:
         base.closing = args.closing
+    if args.item is not None:
+        base.attached_item = args.item
     base.serial = args.serial
     buf = base.build()
     open(args.out, "wb").write(buf)
@@ -399,6 +401,9 @@ def main(argv=None) -> int:
     s.add_argument("-b", "--body", help="UTF-8 text file for the letter body")
     s.add_argument("-g", "--greeting")
     s.add_argument("-c", "--closing")
+    s.add_argument("-i", "--item", type=lambda x: int(x, 0),
+                   help="attached item id, e.g. 0x3310 or 13072 "
+                        "(default: keep the template's item)")
     s.add_argument("-s", "--serial", type=int, required=True)
     s.add_argument("-o", "--out", required=True)
     s.set_defaults(func=cmd_mail)

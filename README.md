@@ -101,6 +101,13 @@ parts of the header are still unidentified:
 python3 axmail.py mail ~/Downloads/forest_mail_USA.bin -b body.txt -s 111 -o forest_mail_USA.bin
 ```
 
+Attach a gift item with `-i/--item` (decimal or `0x` hex, e.g. `0x3310` for the
+Lawn Chair); omitted, the template's item is kept as-is:
+
+```bash
+python3 axmail.py mail ~/Downloads/forest_mail_USA.bin -b body.txt -i 0x3310 -s 111 -o forest_mail_USA.bin
+```
+
 `sign` recomputes the HMAC of a file you edited by other means:
 
 ```bash
